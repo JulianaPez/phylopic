@@ -13,13 +13,14 @@ execute:
 
 ```{css}
 #| echo: false
+#| include: false
 p{
 
 text-align: justify 
 }
 ```
 
-## Phylopic
+## Phylopic minitaller
 
 Es una base de datos que almacena imágenes de siluetas de diferentes organismos. Cada imagen está asociada a uno o más nombres taxonómicos e indica aproximadamente el linaje al que pertenece dicho organismo.
 
