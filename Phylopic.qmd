@@ -1,7 +1,9 @@
 ---
 title: "Un poco sobre Phylopic"
-author: "Juliana Herrera Perez"
-format: revealjs
+author: " Msc. Juliana Herrera Perez"
+format: 
+  revealjs:
+    theme: league
 code-block-height: 200px
 editor: visual
 logo: images/inecol.png
@@ -20,7 +22,7 @@ text-align: justify
 }
 ```
 
-## Phylopic minitaller
+## Phylopic
 
 Es una base de datos que almacena imágenes de siluetas de diferentes organismos. Cada imagen está asociada a uno o más nombres taxonómicos e indica aproximadamente el linaje al que pertenece dicho organismo.
 
@@ -74,6 +76,10 @@ library(leaflet)
 
 ```
 
+ [Descarga los datos .csv](https://github.com/JulianaPez/phylopic/blob/master/fishdata.csv)
+
+## Recursos
+
 Aqui vamos a revisar las funciones basicas: [rphylopic](https://github.com/palaeoverse/rphylopic){preview-link="true"}
 
 Todo lo que vamos a ver esta disponible y resumido en la viñeta de los creadores del paquete: [rphylopic viñeta](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14221){preview-link="true"}
@@ -93,7 +99,7 @@ pickp<-pick_phylopic(name = "characidae",n=1)
 ```{r}
 #| echo: true
 
-uuid <- get_uuid(name = "Cetopsorhamdia molinae")# obtener el identificador unico de la imagen
+uuid <- get_uuid(name = "Phyllobates lugubris")# obtener el identificador unico de la imagen
 img <- get_phylopic(uuid = uuid,format ="vector" ) #obtener imagen
 img<-recolor_phylopic(img,0.7, "red",fill="orange")
 plot(img)
