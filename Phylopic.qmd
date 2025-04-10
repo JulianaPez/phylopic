@@ -3,7 +3,7 @@ title: "Un poco sobre Phylopic"
 author: " Msc. Juliana Herrera Perez"
 format: 
   revealjs:
-    theme: league
+    theme: moon
 code-block-height: 200px
 editor: visual
 logo: images/inecol.png
@@ -99,9 +99,9 @@ pickp<-pick_phylopic(name = "characidae",n=1)
 ```{r}
 #| echo: true
 
-uuid <- get_uuid(name = "Phyllobates lugubris")# obtener el identificador unico de la imagen
+uuid <- get_uuid(name = "Erythromma najas")# obtener el identificador unico de la imagen
 img <- get_phylopic(uuid = uuid,format ="vector" ) #obtener imagen
-img<-recolor_phylopic(img,0.7, "red",fill="orange")
+img<-recolor_phylopic(img,0.7, "blue",fill="black")
 plot(img)
 
 save_phylopic(img = img, path = "Cetops.png",
@@ -127,6 +127,7 @@ ps <- ggplot() +
      ysize = 5
   )
 ps
+ggsave(ps, file="ps.png")
 
 ```
 
