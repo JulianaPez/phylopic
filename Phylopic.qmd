@@ -1,6 +1,6 @@
 ---
 title: "Un poco sobre Phylopic"
-author: " Msc. Juliana Herrera Perez"
+author: " Estudiante PhD Inecol Juliana Herrera Perez"
 format: 
   revealjs:
     theme: moon
